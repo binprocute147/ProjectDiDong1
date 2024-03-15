@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2A3E3C"
+    tools:context=".Them_Ghi_Chu">
+
+    <ImageView
+        android:id="@+id/image_view_exit_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/thoat1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="2dp"
+        android:layout_toRightOf="@id/image_view_exit_icon"
+        android:text="Thoát"
+        android:textColor="#000"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/button_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lưu"
+        android:drawablePadding="10dp"
+        android:layout_alignParentEnd="true" />
+    <EditText
+        android:id="@+id/edit_text_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:textSize="30dp"
+        android:textColor="#000"
+        android:background="#A8A7A5"
+        android:hint="Tiêu đề" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Loại Ghi Chú"
+        android:textSize="23dp"
+        android:background="#A8A7A5"
+        android:layout_marginTop="130dp"
+        android:textColor="#000">
+    </TextView>
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/spinner_loai_ghi_chu"
+        android:layout_below="@id/edit_text_title"
+        android:layout_marginTop="41dp"
+        android:entries="@array/note_types"
+        android:background="#A8A7A5" />
+    <EditText
+        android:id="@+id/edit_text_note_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:textColor="#000"
+        android:textSize="30dp"
+        android:background="#D3C8C8"
+        android:hint="Nhập ghi chú" />
+
+</RelativeLayout>

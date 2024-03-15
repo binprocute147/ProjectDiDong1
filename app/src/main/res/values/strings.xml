@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">BaiTap10_Tuan9</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="note_types">
+        <item>Ăn uống</item>
+        <item>Học tập</item>
+        <item>Sức khỏe</item>
+        <item>Công việc</item>
+        <item>Giải trí</item>
+
+    </string-array>
+</resources>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#2A3E3C"
+    tools:context=".TimKiem_XoaSua">
+
+
+    <ImageView
+        android:id="@+id/image_view_exit_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/thoat1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="-47dp"
+        android:text="Thoát"
+        android:textColor="#000"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/edit_text_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:textSize="30dp"
+        android:textColor="#000"
+        android:background="#A8A7A5"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Loại Ghi Chú"
+        android:textSize="23dp"
+        android:background="#A8A7A5"
+        android:layout_marginTop="25dp"
+        android:textColor="#000">
+
+    </TextView>
+
+    <Spinner
+        android:background="#A8A7A5"
+        android:id="@+id/spinner_note_type"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:entries="@array/note_types"
+        />
+
+    <EditText
+        android:id="@+id/edit_text_note_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:textColor="#000"
+        android:textSize="30dp"
+        android:background="#D3C8C8" />
+
+    <LinearLayout
+        android:id="@+id/button_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/buttondelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:text="Xóa"/>
+
+        <View
+            android:id="@+id/spacer_view"
+            android:layout_width="60dp"
+            android:layout_height="1dp"/>
+
+        <Button
+            android:id="@+id/buttonedit"
+            android:layout_width="wrap_content"
+            android:textSize="30dp"
+            android:layout_height="wrap_content"
+            android:text="Sửa"/>
+
+    </LinearLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_edittext"
+        android:id="@+id/DanhSach"/>
+
+</LinearLayout>

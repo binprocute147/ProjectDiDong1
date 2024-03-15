@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#2A3E3C"
+    android:padding="10dp"
+    tools:context=".TimKiem">
+    <ImageView
+        android:id="@+id/image_view_exit_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/thoat1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="-47dp"
+        android:text="Thoát"
+        android:textColor="#000"
+        android:textSize="30dp" />
+    <EditText
+        android:id="@+id/edit_text_all_notes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_edittext"
+        android:padding="20dp"
+        android:layout_marginTop="30dp"
+        android:text="Tìm Kiếm Ghi Chú"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="30dp" />
+
+    <LinearLayout
+        android:id="@+id/search_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/rounded_edittext"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:src="@drawable/icontimkiem" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:id="@+id/txttimkiem"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Tìm kiếm ghi chú "
+            android:padding="10dp"
+            android:textColor="#000" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp">
+
+        <ListView
+            android:id="@+id/list_view_saved_note_titles"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/maukhac" />
+    </LinearLayout>
+
+</LinearLayout>
